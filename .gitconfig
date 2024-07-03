@@ -1,0 +1,20 @@
+[user]
+	email = francisco@altimari.nl
+	name = Francisco Altimari
+[core]
+	pager = less -FRSX
+	editor = subl -w
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[merge]
+	tool = subl -w
+	log = 2000
+[push]
+	default = matching
+	default = current
+	autoSetupRemote = true
+[remote]
+	pushDefault = origin
