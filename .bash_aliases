@@ -1,71 +1,44 @@
 #!/bin/bash
 # Steam Deck (Fran's Steam Deck)
 
+# Set hostname to be the same as LocalHostName (and ComputerName!)
+sudo scutil --set HostName $(scutil --get LocalHostName)
+
+# -----------------------------------------------------------------------------
 # Aliases
+# -----------------------------------------------------------------------------
+
 alias src='source ~/Documents/.aliases'
 alias cds='cd ~/Documents/.scripts'
 alias grep='grep --color'
 alias la='ls -lah --group-directories-first'
-alias ll='ls -lhG --group-directories-first'
-alias trea='tree -a -I .git'
-alias pcat='[ ! -f "/opt/homebrew/bin/bat" ] && (pbpaste | cat) || pbpaste | bat'
-alias pc='pbcopy'
-alias pv='pbpaste'
-alias myip='ifconfig en0 | grep '\''inet '\'' | awk {'\''print $2'\''}'
-alias pong='ping 8.8.8.8'
-# Git
-alias gs='lg2 status'
-alias gd='lg2 diff'
-alias gp='lg2 push'
-alias gl='lg2 pull'
-alias gb='lg2 branch'
-alias gk='lg2 checkout'
-alias gc='lg2 commit -v -a'
-alias gv='lg2 commit -v'
-alias gf='lg2 fetch'
-alias ga='lg2 add . && lg2 status'
-# alias gr='lg2 log --graph --oneline --full-history --color '
-alias gr='lg2 log -2'
-alias gkb='lg2 checkout -b'
-alias gcm='lg2 commit -m'
-alias grune='lg2 fetch -p && lg2 branch --merged | grep -v \* | xargs lg2 branch -d'
-alias dirstatus='ls | xargs -I SHA sh -c '\''cd SHA/; echo; echo SHA; lg2 status -s; cd -;'\'''
-# Github
-alias ghpr='gh pr create -a @me -l enhancement'
-alias ghprb='gh pr create -a @me -l bug'
-# Editors
-alias sublm='lg2 diff --name-only | xargs subl'
-alias subll='gd @ @~ --name-only | xargs subl'
-# Functions
-alias test='sh ~/Documents/.scripts/functions/test.sh'
-alias colours='sh ~/Documents/.scripts/functions/colours.sh'
-
-
-# -----------------------------------------------------------------------------
-# Aliases
-# -----------------------------------------------------------------------------
-
 alias ll='ls -lhG --group-directories-first --color'
 alias trea='tree -a -I .git'
-alias bp='subl ~/.bash_aliases'
-alias bpl='subl ~/.bash_aliases_local'
-alias pipe='printf \| | pbcopy'
-alias backs='printf \\ | pbcopy'
-alias pcat='[ ! -f "/opt/homebrew/bin/bat" ] && (pbpaste | cat) || pbpaste | bat'
-alias pc='pbcopy'
-alias pv='pbpaste'
 alias myip='ifconfig en0 | grep '\''inet '\'' | awk {'\''print $2'\''}'
-alias cleandock='defaults delete com.apple.systempreferences AttentionPrefBundleIDs && killall Dock'
-alias brewls='brew leaves -r | xargs -I @  brew desc --eval-all @'
+# alias pcat='[ ! -f "/opt/homebrew/bin/bat" ] && (pbpaste | cat) || pbpaste | bat'
+# alias pc='pbcopy'
+# alias pv='pbpaste'
+# alias pipe='printf \| | pbcopy'
+# alias backs='printf \\ | pbcopy'
 
 # Git
+alias gs='git status'
+alias gd='git diff'
+alias gp='git push'
+alias gl='git pull'
+alias gb='git branch'
+alias gk='git checkout'
+alias gc='git commit -v -a'
+alias gv='git commit -v'
 alias gf='git fetch'
 alias ga='git add . && git status'
-alias gx='gitx'
+# alias gr='git log --graph --oneline --full-history --color'
 alias gr='git log --graph --full-history --all --color --pretty=tformat:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s%x20%x1b[33m(%an)%x1b[0m"'
-alias gkb='git checkout -b'
+# alias gx='gitx'
 alias grune='git fetch -p && git branch --merged | grep -v \* | xargs git branch -d'
 alias llgs='ls | xargs -I SHA sh -c '\''cd SHA/; echo; echo SHA; git status -s; cd ~-;'\'''
+# alias gkb='git checkout -b'
+# alias gcm='git commit -m'
 
 # Github
 alias ghpr='gh pr create -a @me -l enhancement'
@@ -159,4 +132,8 @@ colours () {
 export CLICOLOR=1
 export LSCOLORS=cxfxexexDxexexDxDxcxcx
 
+# zoxide init
+eval "$(zoxide init bash)"
 
+# Adds completion for aliases
+alias_completion
