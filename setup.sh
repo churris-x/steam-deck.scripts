@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo 'test'
+echo 'Still WIP, sorry :-('
 
