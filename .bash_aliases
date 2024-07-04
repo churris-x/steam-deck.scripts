@@ -2,7 +2,7 @@
 # Steam Deck (Fran's Steam Deck)
 
 # Set hostname to be the same as LocalHostName (and ComputerName!)
-sudo scutil --set HostName $(scutil --get LocalHostName)
+# sudo scutil --set HostName $(scutil --get LocalHostName)
 
 # -----------------------------------------------------------------------------
 # Aliases
