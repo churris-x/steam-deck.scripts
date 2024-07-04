@@ -2,6 +2,9 @@
 # Source aliases
 # -----------------------------------------------------------------------------
 
+# Source .bashrc
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
 # Sources .bash_aliases
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
