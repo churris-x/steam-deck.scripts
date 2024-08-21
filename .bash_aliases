@@ -8,8 +8,8 @@
 # Aliases
 # -----------------------------------------------------------------------------
 
-alias src='source ~/Documents/.aliases'
-alias cds='cd ~/Documents/.scripts'
+alias src='source ~/.bash_profile'
+alias cdscripts='cd ~/.scripts'
 alias grep='grep --color'
 alias la='ls -lah --group-directories-first'
 alias ll='ls -lhG --group-directories-first --color'
