@@ -18,3 +18,5 @@
 	autoSetupRemote = true
 [remote]
 	pushDefault = origin
+[credential]
+	helper = cache --timeout=525600
