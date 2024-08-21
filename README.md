@@ -38,8 +38,9 @@ To add aliases simply edit the alias file and run `src` to source it.
 - [ ] Fix autocomplete bug. First tab results in a terminal bell error
 - [ ] Configure and add my own `Konsole` terminal profile
 - [ ] Configure `Konsole` colour scheme and add it here
-- [ ] Add `Kate` markdown preview plugin
-- [ ] Add `Kate` preferences, plugins and key rebinds to this repo somehow
+- [x] Add `Kate` markdown preview plugin
+- [ ] Fix `Okular` markdown preview
+- [ ] Add `Kate` preferences, plugins and key rebinds to this repo somehow -> `~/.config/katerc`?
 
 ## N.B.
 All of this was cobbled together from my personal bash configs, and as such not all the aliases and commands are tested and working as intended. Please check any code you are running before doing so. Have fun!
