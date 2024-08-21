@@ -35,7 +35,7 @@ To add aliases simply edit the alias file and run `src` to source it.
 - [ ] Get git tokens working with default keychain `kwallet-query`. Currently doing a terrible 1 year cache
 - [ ] Get Welsh keyboard layout, exactly the same as the MacOS version [1](https://docs.kde.org/stable5/en/plasma-desktop/kcontrol/keyboard/layouts.html) [2](https://discuss.kde.org/t/create-a-new-keyboard-layout/8783/2) [3](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/master/symbols/br?ref_type=heads#L11)
 - [ ] Use super instead of garbage ctrl. This is driving me nuts
-- [ ] Fix autocomplete bug. First tab results in a terminal bell error
+- [x] Fix autocomplete bug. First tab results in a terminal bell error. `set show-all-if-ambiguous on`
 - [ ] Configure and add my own `Konsole` terminal profile
 - [ ] Configure `Konsole` colour scheme and add it here
 - [x] Add `Kate` markdown preview plugin
