@@ -136,4 +136,4 @@ export LSCOLORS=cxfxexexDxexexDxDxcxcx
 eval "$(zoxide init bash)"
 
 # Adds completion for aliases
-alias_completion
+# alias_completion

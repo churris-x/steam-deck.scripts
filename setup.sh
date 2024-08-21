@@ -5,6 +5,11 @@ echo "$0 will now create symbolic links"
 
 cd ~
 
+echo 'Creating .inputrc'
+if [ ! -L .inputrc  ]; then
+    ln -s .scripts/.inputrc .inputrc
+fi
+
 echo 'Creating .gitconfig'
 if [ ! -L .gitconfig ]; then
     ln -s .scripts/.gitconfig .gitconfig
@@ -21,4 +26,3 @@ if [ ! -L .bash_aliases ]; then
 fi
 
 # TODO: make automatic setup of Konsole theme from scripts
-
