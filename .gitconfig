@@ -3,14 +3,14 @@
 	name = Francisco Altimari
 [core]
 	pager = less -FRSX
-	editor = subl -w
+	editor = kwrite
 [color]
 	ui = auto
 	diff = auto
 	status = auto
 	branch = auto
 [merge]
-	tool = subl -w
+	tool = kwrite
 	log = 2000
 [push]
 	default = matching
