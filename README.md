@@ -15,18 +15,19 @@ sh .scripts/setup.sh
 ```sh
 [~]$ tree -a -L 1
 .
-├── .aliases        # symlink
+├── .inputrc        # symlink
+├── .bash_aliases   # symlink
+├── .bash_profile   # symlink
 ├── .gitconfig      # symlink
-├── .profile        # symlink
 └── .scripts        # this repo
 ```
 
 ## Use
-The main thing this repository does is create and manage three general dot files, `.profile`, `.aliases` and `.gitconfig`. This is done by creating symbolic links to each of those files in the root folder, so the files can be portable and kept up to date.
+The main thing this repository does is create and manage the general dot files. This is done by creating symbolic links to each of those files in the root folder, so the files can be portable and kept up to date.
 
-- `.profile` : for now just sources the `.aliases` file
-- `.aliases` : stores all aliases commands & functions (see below how functions work)
-- `functions/` : folder for script files that work as aliases
+- `.inputrc` : sets tab behaviour to be sane
+- `.bash_profile` : sources the `.bashrc` and `.aliases` files
+- `.bash_aliases` : stores all aliases commands & util functions
 - `.gitconfig` : general config such as username
 
 To add aliases simply edit the alias file and run `src` to source it.
