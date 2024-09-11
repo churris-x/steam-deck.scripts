@@ -133,7 +133,7 @@ export CLICOLOR=1
 export LSCOLORS=cxfxexexDxexexDxDxcxcx
 
 # zoxide init
-eval "$(zoxide init bash)"
+# eval "$(zoxide init bash)"
 
 # Adds completion for aliases
 # alias_completion
