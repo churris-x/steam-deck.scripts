@@ -32,6 +32,20 @@ The main thing this repository does is create and manage the general dot files. 
 
 To add aliases simply edit the alias file and run `src` to source it.
 
+## How to setup github password
+1. Install KWalletManager
+    > This is done because the tool `kwallet-query` does not work.  
+    > Firstly open the `Discover` app, search for KWalletManager and install it  
+    > You shoul get an error because the version of Plasma the deck uses is 5, while the one it downloads expects version 6  
+    > Run the following command to *manually* change which commit you are downloading from. Thank you [u/gmes78](https://www.reddit.com/r/kde/comments/1c4hu5y/cannot_run_kwalletmanager_on_my_steam_deck/)  
+    > `flatpak update --commit=cf3a6420de76bed4ead3d5546bd6a9f402af26941d26bafa5be9de3da42bbb98 org.kde.kwalletmanager5`  
+    > KWalletManager should run as expected. Congratulation you did the job a ANY version control system should do
+
+2. Configure git
+    > In your `.gitconfig` add `credential.heper libsecret`  
+    > Make github request your credentials  
+    > Shoud be good. Double check on the wallet manager that there is an entry called Git
+
 ## TODO
 - [x] Get git tokens working with default keychain `kwallet-query`. Currently doing a terrible 1 year cache
 - [ ] Get Welsh keyboard layout, exactly the same as the MacOS version [1](https://docs.kde.org/stable5/en/plasma-desktop/kcontrol/keyboard/layouts.html) [2](https://discuss.kde.org/t/create-a-new-keyboard-layout/8783/2) [3](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/master/symbols/br?ref_type=heads#L11)
