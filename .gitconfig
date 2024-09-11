@@ -19,4 +19,4 @@
 [remote]
 	pushDefault = origin
 [credential]
-	helper = cache --timeout=525600
+	helper = libsecret
