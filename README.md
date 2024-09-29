@@ -57,8 +57,8 @@ sudo steamos-readonly disable
 2. Set up `pacman`
 
 ```sh
-sudo pacman-key — init
-sudo pacman-key --populate archlinux
+sudo pacman-key --init
+sudo pacman-key --populate
 ```
 
 ## TODO
