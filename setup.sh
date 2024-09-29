@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Written by Fran - 2024
+# Create symlinks for all configuration files on ~
 
 echo "$0 will now create symbolic links"
 
@@ -26,3 +27,4 @@ if [ ! -L .bash_aliases ]; then
 fi
 
 # TODO: make automatic setup of Konsole theme from scripts
+# TODO: also call install script, need to somehow setup pacman... maybe with sudo?
