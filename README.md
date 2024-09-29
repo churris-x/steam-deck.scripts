@@ -46,6 +46,21 @@ To add aliases simply edit the alias file and run `src` to source it.
     > Make github request your credentials  
     > Shoud be good. Double check on the wallet manager that there is an entry called Git
 
+## How to install packages
+1. Enable `/` to be read and write with
+
+```sh
+# Disables root read only
+sudo steamos-readonly disable
+```
+
+2. Set up `pacman`
+
+```sh
+sudo pacman-key — init
+sudo pacman-key --populate archlinux
+```
+
 ## TODO
 - [x] Get git tokens working with default keychain `kwallet-query`. Currently doing a terrible 1 year cache
 - [ ] Get Welsh keyboard layout, exactly the same as the MacOS version [1](https://docs.kde.org/stable5/en/plasma-desktop/kcontrol/keyboard/layouts.html) [2](https://discuss.kde.org/t/create-a-new-keyboard-layout/8783/2) [3](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/master/symbols/br?ref_type=heads#L11)
@@ -57,6 +72,8 @@ To add aliases simply edit the alias file and run `src` to source it.
 - [ ] Fix `Okular` markdown preview
 - [ ] Add `Kate` preferences, plugins and key rebinds to this repo somehow -> `~/.config/katerc`?
 - [ ] Fix bash aliases not having autocomplete eg: `gk mas` does note autocompelte to `gk master`
+- [ ] Figure out how to automatically install pacakages with pacman
+- [ ] Figure out how to install apps with pacman
 
 ## N.B.
 All of this was cobbled together from my personal bash configs, and as such not all the aliases and commands are tested and working as intended. Please check any code you are running before doing so. Have fun!
