@@ -16,6 +16,7 @@ binaries=(
 
     # Utils
     bat                         # Cat clone with syntax highlighting and git integration
+    gitg                        # GNOME clone of gitx, graphical git log
 )
 
 # Generate descriptions with:
