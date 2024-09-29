@@ -81,8 +81,8 @@ pacman -Syu     # Upgrade
 - [ ] Fix `Okular` markdown preview
 - [ ] Add `Kate` preferences, plugins and key rebinds to this repo somehow -> `~/.config/katerc`?
 - [ ] Fix bash aliases not having autocomplete eg: `gk mas` does note autocompelte to `gk master`
-- [ ] Figure out how to automatically install pacakages with pacman
-- [ ] Figure out how to install apps with pacman
+- [x] Figure out how to automatically install pacakages with pacman
+- [x] Figure out how to install apps with pacman
 - [x] Find gitx equivalent
 
 ## N.B.
