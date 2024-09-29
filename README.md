@@ -61,6 +61,15 @@ sudo pacman-key --init
 sudo pacman-key --populate
 ```
 
+3. Run `install.sh`, this will attempt to install a list of binaries
+
+### Pacman Notes
+```sh
+pacman -S       # Install
+pacman -Rns     # Remove
+pacman -Syu     # Upgrade
+```
+
 ## TODO
 - [x] Get git tokens working with default keychain `kwallet-query`. Currently doing a terrible 1 year cache
 - [ ] Get Welsh keyboard layout, exactly the same as the MacOS version [1](https://docs.kde.org/stable5/en/plasma-desktop/kcontrol/keyboard/layouts.html) [2](https://discuss.kde.org/t/create-a-new-keyboard-layout/8783/2) [3](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/master/symbols/br?ref_type=heads#L11)
