@@ -83,6 +83,7 @@ pacman -Syu     # Upgrade
 - [ ] Fix bash aliases not having autocomplete eg: `gk mas` does note autocompelte to `gk master`
 - [ ] Figure out how to automatically install pacakages with pacman
 - [ ] Figure out how to install apps with pacman
+- [x] Find gitx equivalent
 
 ## N.B.
 All of this was cobbled together from my personal bash configs, and as such not all the aliases and commands are tested and working as intended. Please check any code you are running before doing so. Have fun!
