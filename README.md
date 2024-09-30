@@ -87,6 +87,7 @@ pacman -Syu     # Upgrade
 - [x] Find gitx equivalent
 - [ ] Fix `gitg` not freeing up terminal when called
 - [ ] Fix `subl` not being found
+- [ ] Fix .bash_profile symlink disappearing
 
 ## N.B.
 All of this was cobbled together from my personal bash configs, and as such not all the aliases and commands are tested and working as intended. Please check any code you are running before doing so. Have fun!
