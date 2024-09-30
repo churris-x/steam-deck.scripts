@@ -85,7 +85,7 @@ pacman -Syu     # Upgrade
 - [x] Figure out how to automatically install pacakages with pacman
 - [x] Figure out how to install apps with pacman
 - [x] Find gitx equivalent
-- [ ] Fix `gitg` not freeing up terminal when called
+- [ ] Fix `gitg` not freeing up terminal when called -> band-aid solution is to add an `&` so the process is sent to background
 - [ ] Fix `subl` not being found
 - [ ] Fix .bash_profile symlink disappearing
 
