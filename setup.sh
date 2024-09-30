@@ -6,23 +6,29 @@ echo "$0 will now create symbolic links"
 
 cd ~
 
-echo 'Creating .inputrc'
 if [ ! -L .inputrc  ]; then
+    echo 'Creating .inputrc'
     ln -s .scripts/.inputrc .inputrc
 fi
 
-echo 'Creating .gitconfig'
 if [ ! -L .gitconfig ]; then
+    echo 'Creating .gitconfig'
     ln -s .scripts/.gitconfig .gitconfig
 fi
 
-echo 'Creating .bash_profile'
 if [ ! -L .bash_profile  ]; then
+    echo 'Creating .bash_profile'
     ln -s .scripts/.bash_profile .bash_profile
 fi
 
-echo 'Creating .bash_aliases'
+# TODO: create a bashrc profile
+# if [ ! -L .bashrc  ]; then
+#     echo 'Creating .bashrc'
+#     ln -s .scripts/.bashrc .bashrc
+# fi
+
 if [ ! -L .bash_aliases ]; then
+    echo 'Creating .bash_aliases'
     ln -s .scripts/.bash_aliases .bash_aliases
 fi
 
