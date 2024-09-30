@@ -66,6 +66,7 @@ sudo pacman-key --populate
 ### Pacman Notes
 ```sh
 pacman -S       # Install
+pacman -Ss      # Search for package
 pacman -Rns     # Remove
 pacman -Syu     # Upgrade
 ```
@@ -84,6 +85,8 @@ pacman -Syu     # Upgrade
 - [x] Figure out how to automatically install pacakages with pacman
 - [x] Figure out how to install apps with pacman
 - [x] Find gitx equivalent
+- [ ] Fix `gitg` not freeing up terminal when called
+- [ ] Fix `subl` not being found
 
 ## N.B.
 All of this was cobbled together from my personal bash configs, and as such not all the aliases and commands are tested and working as intended. Please check any code you are running before doing so. Have fun!
