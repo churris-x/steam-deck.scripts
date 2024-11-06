@@ -48,6 +48,8 @@ alias ghprb='gh pr create -a @me -l bug'
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias vs='code'
 alias vsm='git diff --name-only | xargs code'
+# alias subl='flatpak run com.sublimetext.three &'    # why in marduks name does this not fucking work
+alias subl='kate' # using kate for now since the fucking bin is able to run the background like any process in this cursed earth
 alias sublm='git diff --name-only | xargs subl'
 alias subll='gd @ @~ --name-only | xargs subl' # TODO: make this also open the parent folder
 
