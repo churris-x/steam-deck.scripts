@@ -60,6 +60,9 @@ alias start='npm start'
 alias treen='tree -I node*'
 alias env='vercel env pull .env.local'
 
+# Games
+alias cdcar='cd /home/deck/.steam/steam/steamapps/compatdata/516750/pfx/drive_c/users/steamuser/AppData/LocalLow/Amistech/My\ Summer\ Car' # enter my summer car save folder
+
 # -----------------------------------------------------------------------------
 # Functions
 # -----------------------------------------------------------------------------
