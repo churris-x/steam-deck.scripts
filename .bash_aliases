@@ -61,7 +61,8 @@ alias treen='tree -I node*'
 alias env='vercel env pull .env.local'
 
 # Games
-alias cdcar='cd /home/deck/.steam/steam/steamapps/compatdata/516750/pfx/drive_c/users/steamuser/AppData/LocalLow/Amistech/My\ Summer\ Car' # enter my summer car save folder
+alias cdcar='cd /home/deck/.steam/steam/steamapps/compatdata/516750/pfx/drive_c/users/steamuser/AppData/LocalLow/Amistech/My\ Summer\ Car' # my summer car save folder
+alias cdfactory='cd /home/deck/.steam/root/steamapps/compatdata/526870/pfx/dosdevices/c:/users/steamuser/AppData/Local/FactoryGame/Saved'  # satisfactory save folder
 
 # -----------------------------------------------------------------------------
 # Functions
